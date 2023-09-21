@@ -394,6 +394,15 @@ margin-left:80px;
         margin-bottom: 16px;
 }
 
+.footer-form {
+    display: flex;
+}
+
+.footer-label {
+    gap: 24px;
+
+}
+
 .footer-subscribe {
     width: 264px;
     height: 40px;
