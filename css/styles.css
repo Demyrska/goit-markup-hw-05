@@ -706,6 +706,9 @@ color: #8E8F99;
 .input-checkbox:checked {
     background-color: #404bbf;;
     border: none;
+}
+
+.own-checkbox:checked span + .checkbox-icon-choose {
     fill: #F4F4FD;
 }
 
