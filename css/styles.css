@@ -453,7 +453,8 @@ height: 40px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-open {
     opacity: 1;
@@ -471,18 +472,18 @@ height: 40px;
     padding: 24px;
     border-radius: 4px;
     background-color: #FCFCFC;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-
-
 .close-botton-icon {
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    fill: #E7E9FC;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #2E2F42;
     stroke: (0, 0, 0, 0.10);
 }
 
 .close-botton-icon:hover, close-botton-icon:focus {
-    fill: var(--OCEAN, #404BBF);
+    fill: #ffffff
     stroke:#FFFFFF;
 }
 
@@ -495,9 +496,18 @@ position: absolute;
 top: 24px;
 right: 24px;
 fill: #2E2F42;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #e7e9fc;
+border: 1px solid rgba(0, 0, 0, 0.1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .close-botton:hover, .close-botton:focus {
     fill:#FFFFFF;
+        background-color: #404bbf;
 }
 .form-description {
 color: #2E2F42;
@@ -519,10 +529,10 @@ margin-bottom: 16px;
     color: #8E8F99;
         font-size: 12px;
         font-weight: 400;
-        line-height: 1.16;
         letter-spacing: 0.04em;
         display: block;
         margin-bottom: 4px;
+        line-height: 1.17;
 
 }
 
@@ -536,7 +546,7 @@ position: relative;
         height: 40px;
 border-radius: 4px;
     border: 1px solid rgba(46, 47, 66, 0.40);
-    padding-left: 62px;
+    padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
