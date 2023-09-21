@@ -613,6 +613,7 @@ color: rgba(46, 47, 66, 0.40);
 color: #8E8F99;
     font-size: 12px;
     letter-spacing: 0.04em;
+    line-height: 1.17;
 }
 
 .input-checkbox-wrapper {
