@@ -692,6 +692,10 @@ color: #8E8F99;
 }
 
 .own-checkbox {
+margin-right: 8px;
+}
+
+.own-checkbox {
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -703,14 +707,12 @@ color: #8E8F99;
     fill: transparent;
 }
 
-.input-checkbox:checked {
+input:checked + label > span {
     background-color: #404bbf;;
     border: none;
-}
-
-.own-checkbox:checked span + .checkbox-icon-choose {
     fill: #F4F4FD;
 }
+
 
 .input-checkbox-wrapper {
     margin-bottom: 24px
